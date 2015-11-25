@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'NNMultipleImagePickerController_Example', :exclusive => true do
+  pod "NNMultipleImagePickerController", :path => "../"
+end
+
+target 'NNMultipleImagePickerController_Tests', :exclusive => true do
+  pod "NNMultipleImagePickerController", :path => "../"
+
+  
+end
