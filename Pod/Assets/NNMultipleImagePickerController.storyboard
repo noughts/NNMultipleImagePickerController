@@ -52,13 +52,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view alpha="0.33000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iga-kl-bfa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-Ve-5Jf">
                                                     <rect key="frame" x="101" y="96" width="24" height="24"/>
                                                     <animations/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-1g-9CT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
                                                 </imageView>
                                             </subviews>
                                             <animations/>
@@ -67,15 +66,15 @@
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="EDc-Ve-5Jf" secondAttribute="trailing" constant="4" id="07v-u9-Ju7"/>
+                                            <constraint firstAttribute="trailing" secondItem="bpX-1g-9CT" secondAttribute="trailing" id="6cd-Pq-RZp"/>
                                             <constraint firstAttribute="bottom" secondItem="EDc-Ve-5Jf" secondAttribute="bottom" constant="4" id="7sy-PC-zjN"/>
-                                            <constraint firstItem="iga-kl-bfa" firstAttribute="top" secondItem="FpG-FV-Yj5" secondAttribute="top" id="aYt-Vd-fMf"/>
-                                            <constraint firstAttribute="trailing" secondItem="iga-kl-bfa" secondAttribute="trailing" id="sqb-um-uRY"/>
-                                            <constraint firstItem="iga-kl-bfa" firstAttribute="leading" secondItem="FpG-FV-Yj5" secondAttribute="leading" id="tYf-Gz-lXp"/>
-                                            <constraint firstAttribute="bottom" secondItem="iga-kl-bfa" secondAttribute="bottom" id="vO3-75-djh"/>
+                                            <constraint firstAttribute="bottom" secondItem="bpX-1g-9CT" secondAttribute="bottom" id="8pc-1X-dUa"/>
+                                            <constraint firstItem="bpX-1g-9CT" firstAttribute="leading" secondItem="FpG-FV-Yj5" secondAttribute="leading" id="Yqo-sq-Hp9"/>
+                                            <constraint firstItem="bpX-1g-9CT" firstAttribute="top" secondItem="FpG-FV-Yj5" secondAttribute="top" id="gta-0Z-AK2"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="_check_iv" destination="EDc-Ve-5Jf" id="d5D-6X-B6T"/>
-                                            <outlet property="_selected_view" destination="iga-kl-bfa" id="Qxz-8s-qsf"/>
+                                            <outlet property="_thumb_iv" destination="bpX-1g-9CT" id="WuZ-mW-h21"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

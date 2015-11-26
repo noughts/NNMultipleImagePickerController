@@ -9,9 +9,10 @@
 #import "NNMIPGridCell.h"
 @import Photos;
 #import <UIScreen+NNUtils.h>
+#import "NBULogStub.h"
 
 @implementation NNMIPGridCell{
-	__weak IBOutlet UIView* _selected_view;
+	__weak IBOutlet UIImageView* _thumb_iv;
 	__weak IBOutlet UIImageView* _check_iv;
 	PHAsset* _asset;
 }
@@ -21,14 +22,17 @@
 	[super awakeFromNib];
 	self.layer.contentsGravity = @"resizeAspectFill";
 	_check_iv.hidden = YES;
-	_selected_view.hidden = YES;
 }
 
 
 -(void)setSelected:(BOOL)selected{
 	[super setSelected:selected];
 	_check_iv.hidden = !selected;
-	_selected_view.hidden = !selected;
+	if( selected ){
+		_thumb_iv.alpha = 0.5;
+	} else {
+		_thumb_iv.alpha = 1;
+	}
 }
 
 -(void)setHighlighted:(BOOL)highlighted{
@@ -51,9 +55,9 @@
 
 -(void)configureWithAsset:(PHAsset*)asset{
 	_asset = asset;
-	NSInteger size = [UIScreen mainScreen].pixelWidth / 4;
+	NSInteger size = [UIScreen mainScreen].nativeBounds.size.width / 8;
 	[[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(size,size) contentMode:PHImageContentModeAspectFill options:nil resultHandler:^(UIImage *result, NSDictionary *info) {
-		self.layer.contents = (__bridge id _Nullable)(result.CGImage);
+		_thumb_iv.image = result;
 	}];
 }
 
