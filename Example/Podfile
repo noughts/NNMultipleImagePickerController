@@ -1,7 +1,10 @@
+source 'https://github.com/noughts/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
+
 
 target 'NNMultipleImagePickerController_Example', :exclusive => true do
   pod "NNMultipleImagePickerController", :path => "../"
+  pod "NBULog"
 end
 
 target 'NNMultipleImagePickerController_Tests', :exclusive => true do

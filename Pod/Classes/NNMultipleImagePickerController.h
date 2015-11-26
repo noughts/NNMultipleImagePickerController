@@ -10,4 +10,7 @@
 
 @interface NNMultipleImagePickerController : UINavigationController
 
+/// storyboardを使った初期化
++(instancetype)instantiate;
+
 @end

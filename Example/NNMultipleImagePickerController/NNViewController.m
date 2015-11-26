@@ -7,10 +7,7 @@
 //
 
 #import "NNViewController.h"
-
-@interface NNViewController ()
-
-@end
+#import <NNMultipleImagePickerController.h>
 
 @implementation NNViewController
 
@@ -20,10 +17,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(IBAction)onButtonTap:(id)sender{
+	NNMultipleImagePickerController* ipc = [NNMultipleImagePickerController instantiate];
+	[self presentViewController:ipc animated:YES completion:nil];
 }
-
 @end

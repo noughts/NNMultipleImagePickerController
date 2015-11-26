@@ -1,7 +1,30 @@
 PODS:
-  - NNMultipleImagePickerController (0.1.0)
+  - AMPopTip (1.7.2)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - NBULog (1.2.4):
+    - CocoaLumberjack (>= 2.0.0)
+  - NBULogStub (0.1.2)
+  - NNMultipleImagePickerController (0.1.0):
+    - NNUtils
+  - NNProfiler (1.1.1):
+    - NBULogStub
+  - NNSprite (0.5.1)
+  - NNUtils (1.32.1):
+    - AMPopTip
+    - NNProfiler
+    - NNSprite
+    - NSDate-Escort
+  - NSDate-Escort (1.5.3)
 
 DEPENDENCIES:
+  - NBULog
   - NNMultipleImagePickerController (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,6 +32,14 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NNMultipleImagePickerController: 10c08424d1aae973f6b7230ae56c4621e14f1f48
+  AMPopTip: c59bb65d9fd230f0dceb5fbb5c92560b649f0195
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  NBULog: 4003be6706b97a7e376ab4171c666ac7c2fbc2b2
+  NBULogStub: 398fa3535e3b368d6f1cb3b32c2ac0cb81cf350c
+  NNMultipleImagePickerController: e963904c28cd8cbe63d4eb2a6681628452dfdb32
+  NNProfiler: e2abbda27cd623b19848fa21d3c4e24732c9b648
+  NNSprite: 5afb965714210a812394b76b20e94fb902d14db3
+  NNUtils: 668377c67112e831d8d3a6f67f1ed47a8a399e7d
+  NSDate-Escort: a01b1298d1ef3a79f6c205ef63a9781c41c8ee78
 
-COCOAPODS: 0.39.0
+COCOAPODS: 0.38.2

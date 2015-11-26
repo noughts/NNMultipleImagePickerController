@@ -204,7 +204,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				4F6ABBD157AB4F43F8E8064B /* Embed Pods Frameworks */,
 				A93C8CFAB664F6EB0D416138 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -224,7 +223,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				AFA326180A166B874D54EDCF /* Embed Pods Frameworks */,
 				DD161C4B9145C308699B890C /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -308,21 +306,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		4F6ABBD157AB4F43F8E8064B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNMultipleImagePickerController_Example/Pods-NNMultipleImagePickerController_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8F2F9183C5D87ED1A0FE4768 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,21 +334,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNMultipleImagePickerController_Example/Pods-NNMultipleImagePickerController_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFA326180A166B874D54EDCF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNMultipleImagePickerController_Tests/Pods-NNMultipleImagePickerController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD161C4B9145C308699B890C /* Copy Pods Resources */ = {

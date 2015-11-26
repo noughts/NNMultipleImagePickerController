@@ -7,7 +7,14 @@
 //
 
 #import "NNMultipleImagePickerController.h"
+#import "NNPodUtils.h"
 
 @implementation NNMultipleImagePickerController
+
++(instancetype)instantiate{
+	NNPodUtils* utils = [[NNPodUtils alloc] initWithPodName:@"NNMultipleImagePickerController"];
+	return [utils.storyboard instantiateInitialViewController];
+}
+
 
 @end

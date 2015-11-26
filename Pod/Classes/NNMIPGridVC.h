@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NNMIPGridVC : UICollectionViewController
+@interface NNMIPGridVC : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @end
