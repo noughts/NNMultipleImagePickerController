@@ -10,7 +10,7 @@
 @import Photos;
 @import AssetsLibrary;
 #import "NNMIPGridCell.h"
-#import <UIScreen+NNUtils.h>
+#import "UIScreen+NNUtils.h"
 
 @implementation NNMIPGridView{
 	ALAssetsLibrary* _lib;
