@@ -8,6 +8,8 @@
 
 #import "NNMultipleImagePickerController.h"
 #import "NNPodUtils.h"
+#import "NNMIPGridVC.h"
+#import "NBULogStub.h"
 
 @implementation NNMultipleImagePickerController
 
@@ -17,4 +19,20 @@
 }
 
 
+-(void)onCancelButtonTap:(id)sender{
+	
+}
+
+-(void)onGridDoneButtonTap:(NNMIPGridVC*)gridVC{
+	NBULogInfo(@"%@", [gridVC selectedAssets]);
+}
+
 @end
+
+
+
+
+
+
+
+

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import Photos;
 
 @interface NNMIPGridView : UICollectionView
+
+/// 選択中のasset配列取得
+-(NSArray<PHAsset*>*)selectedAssets;
 
 @end

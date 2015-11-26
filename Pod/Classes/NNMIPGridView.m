@@ -41,7 +41,7 @@
 
 
 /// 選択中のasset配列取得
--(NSArray<PHAsset*>*)selectedPHAsset{
+-(NSArray<PHAsset*>*)selectedAssets{
 	NSMutableSet<PHAsset*>* set = [NSMutableSet new];
 	for (NNMIPGridCell* cell in [self selectedCells]) {
 		[set addObject:[cell asset]];

@@ -70,7 +70,27 @@
 
 
 
+#pragma mark - public method
 
+/// 選択中のAsset配列
+-(NSArray<PHAsset*>*)selectedAssets{
+	return [_collectionView selectedAssets];
+}
+
+
+
+
+
+
+#pragma mark - ボタン系
+
+-(IBAction)onCancelButtonTap:(id)sender{
+	[[UIApplication sharedApplication] sendAction:@selector(onCancelButtonTap:) to:nil from:self forEvent:nil];
+}
+
+-(IBAction)onDoneButtonTap:(id)sender{
+	[[UIApplication sharedApplication] sendAction:@selector(onGridDoneButtonTap:) to:nil from:self forEvent:nil];
+}
 
 
 

@@ -50,6 +50,7 @@
 
 
 -(void)configureWithAsset:(PHAsset*)asset{
+	_asset = asset;
 	NSInteger size = [UIScreen mainScreen].pixelWidth / 4;
 	[[PHImageManager defaultManager] requestImageForAsset:asset targetSize:CGSizeMake(size,size) contentMode:PHImageContentModeAspectFill options:nil resultHandler:^(UIImage *result, NSDictionary *info) {
 		self.layer.contents = (__bridge id _Nullable)(result.CGImage);

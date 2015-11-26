@@ -95,8 +95,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E9h-ic-X6b">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zqT-6o-KR3"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="AS3-p0-wz8"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zqT-6o-KR3">
+                            <connections>
+                                <action selector="onCancelButtonTap:" destination="BOc-hb-MeE" id="IwH-3i-DG9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="AS3-p0-wz8">
+                            <connections>
+                                <action selector="onDoneButtonTap:" destination="BOc-hb-MeE" id="gcG-ky-bDR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="_collectionView" destination="HsW-Ot-9t1" id="EaP-C1-OJ0"/>
