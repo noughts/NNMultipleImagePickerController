@@ -58,6 +58,7 @@
 
 -(void)onFetchAsetsComplte{
 	[_collectionView reloadData];
+	[self updateTitle];
 	
 	[UIView animateWithDuration:0 delay:0 options:(7<<16) animations:^{
 		_loading_view.alpha = 0;
@@ -85,7 +86,7 @@
 #pragma mark - ボタン系
 
 -(IBAction)onCancelButtonTap:(id)sender{
-	[[UIApplication sharedApplication] sendAction:@selector(onCancelButtonTap:) to:nil from:self forEvent:nil];
+	[[UIApplication sharedApplication] sendAction:@selector(onGridCancelButtonTap:) to:nil from:self forEvent:nil];
 }
 
 -(IBAction)onDoneButtonTap:(id)sender{
@@ -118,35 +119,32 @@
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+	[self updateTitle];
 }
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+	[self updateTitle];
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
 
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+
+#pragma mark - その他
+
+-(void)updateTitle{
+	NSUInteger count = [_collectionView indexPathsForSelectedItems].count;
+	if( count == 0 ){
+		self.navigationItem.title = @"写真を選択";
+	} else {
+		self.navigationItem.title = [NSString stringWithFormat:@"選択中の写真: %@枚", @(count)];
+	}
 	
 }
-*/
+
+
+
+
+
+
+
 
 @end

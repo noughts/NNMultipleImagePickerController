@@ -19,12 +19,13 @@
 }
 
 
--(void)onCancelButtonTap:(id)sender{
-	
+-(void)onGridCancelButtonTap:(id)sender{
+	[_pickerDelegate imagePickerControllerDidCancel:self];
 }
 
 -(void)onGridDoneButtonTap:(NNMIPGridVC*)gridVC{
-	NBULogInfo(@"%@", [gridVC selectedAssets]);
+//	NBULogInfo(@"%@", [gridVC selectedAssets]);
+	[_pickerDelegate imagePickerController:self didFinishPickingAssets:[gridVC selectedAssets]];
 }
 
 @end
