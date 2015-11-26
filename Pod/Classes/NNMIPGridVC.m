@@ -58,6 +58,7 @@
 
 -(void)onFetchAsetsComplte{
 	[_collectionView reloadData];
+	[_collectionView scrollToBottom:_phAssets.count];
 	[self updateTitle];
 	
 	[UIView animateWithDuration:0 delay:0 options:(7<<16) animations:^{
@@ -108,7 +109,8 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return _phAssets.count;
+	NSUInteger count = _phAssets.count;
+    return count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

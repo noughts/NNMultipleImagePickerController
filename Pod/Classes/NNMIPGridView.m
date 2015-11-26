@@ -31,7 +31,20 @@
 
 
 
+
+
+
+
+
 #pragma mark - public method
+
+
+-(void)scrollToBottom:(NSUInteger)count{
+	if( count > 0 ){
+		NSIndexPath* indexPath = [NSIndexPath indexPathForItem:count-1 inSection:0];
+		[self scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:NO];
+	}
+}
 
 /// セルを選択
 -(void)selectCell:(NNMIPGridCell*)cell{

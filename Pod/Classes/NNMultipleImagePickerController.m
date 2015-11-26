@@ -24,7 +24,6 @@
 }
 
 -(void)onGridDoneButtonTap:(NNMIPGridVC*)gridVC{
-//	NBULogInfo(@"%@", [gridVC selectedAssets]);
 	[_pickerDelegate imagePickerController:self didFinishPickingAssets:[gridVC selectedAssets]];
 }
 

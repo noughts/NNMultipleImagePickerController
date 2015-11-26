@@ -14,4 +14,6 @@
 /// 選択中のasset配列取得
 -(NSArray<PHAsset*>*)selectedAssets;
 
+-(void)scrollToBottom:(NSUInteger)count;
+
 @end
