@@ -29,7 +29,7 @@
 	[super setSelected:selected];
 	_check_iv.hidden = !selected;
 	if( selected ){
-		_thumb_iv.alpha = 0.5;
+		_thumb_iv.alpha = 0.8;
 	} else {
 		_thumb_iv.alpha = 1;
 	}

@@ -10,7 +10,7 @@
 @import Photos;
 @import AssetsLibrary;
 #import "NNMIPGridCell.h"
-
+#import <UIScreen+NNUtils.h>
 
 @implementation NNMIPGridView{
 	ALAssetsLibrary* _lib;
@@ -25,7 +25,7 @@
 	
 	/// セルサイズを決定
 	UICollectionViewFlowLayout* layout = (UICollectionViewFlowLayout*)self.collectionViewLayout;
-	CGFloat length = ([UIScreen mainScreen].bounds.size.width-3) / 4.0;
+	CGFloat length = ([UIScreen mainScreen].screenWidth - 3) / 4.0;
 	layout.itemSize = CGSizeMake(length, length);
 }
 

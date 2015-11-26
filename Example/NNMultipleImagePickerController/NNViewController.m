@@ -8,6 +8,7 @@
 
 #import "NNViewController.h"
 #import <NNMultipleImagePickerController.h>
+#import "NBULog.h"
 
 @implementation NNViewController
 
@@ -25,6 +26,21 @@
 
 -(IBAction)onButtonTap:(id)sender{
 	NNMultipleImagePickerController* ipc = [NNMultipleImagePickerController instantiate];
+	ipc.pickerDelegate = self;
 	[self presentViewController:ipc animated:YES completion:nil];
 }
+
+
+
+-(void)imagePickerController:(NNMultipleImagePickerController *)picker didFinishPickingAssets:(NSArray *)photos{
+	NBULogInfo(@"%@", photos);
+	[picker dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)imagePickerControllerDidCancel:(NNMultipleImagePickerController *)picker{
+	[picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
+
 @end

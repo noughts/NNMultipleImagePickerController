@@ -52,12 +52,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-1g-9CT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
+                                                </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-Ve-5Jf">
                                                     <rect key="frame" x="101" y="96" width="24" height="24"/>
                                                     <animations/>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-1g-9CT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="129" height="124"/>
                                                 </imageView>
                                             </subviews>
                                             <animations/>
