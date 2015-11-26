@@ -8,7 +8,7 @@
 
 #import "NNMIPGridCell.h"
 @import Photos;
-#import <UIScreen+NNUtils.h>
+#import "UIScreen+NNUtils.h"
 #import "NBULogStub.h"
 
 @implementation NNMIPGridCell{
