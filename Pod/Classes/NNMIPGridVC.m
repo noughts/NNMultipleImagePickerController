@@ -44,7 +44,7 @@
 		PHFetchResult* assetCollections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:nil];
 		[assetCollections enumerateObjectsUsingBlock:^(PHAssetCollection* assetCollection, NSUInteger idx, BOOL * _Nonnull stop) {
 			PHFetchResult *assets = [PHAsset fetchAssetsInAssetCollection:assetCollection options:options];
-			[assets enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(PHAsset *asset, NSUInteger idx, BOOL * _Nonnull stop) {
+			[assets enumerateObjectsWithOptions:0 usingBlock:^(PHAsset *asset, NSUInteger idx, BOOL * _Nonnull stop) {
 				[_phAssets addObject:asset];
 			}];
 		}];
