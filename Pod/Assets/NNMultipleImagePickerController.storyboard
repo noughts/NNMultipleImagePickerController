@@ -94,7 +94,10 @@
                             <constraint firstItem="X2g-HC-bYn" firstAttribute="centerX" secondItem="hQT-j5-f51" secondAttribute="centerX" id="zE1-Lm-mEn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="E9h-ic-X6b"/>
+                    <navigationItem key="navigationItem" id="E9h-ic-X6b">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zqT-6o-KR3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="AS3-p0-wz8"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="_collectionView" destination="HsW-Ot-9t1" id="EaP-C1-OJ0"/>
                         <outlet property="_loading_view" destination="X2g-HC-bYn" id="YsL-3o-eMj"/>
