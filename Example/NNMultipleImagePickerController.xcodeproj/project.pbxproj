@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3276D84C789C4E48ED05CA /* libPods-NNMultipleImagePickerController_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B38E15927BD178189F214E /* libPods-NNMultipleImagePickerController_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,8 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8E0E9EB8C947CA728421890A /* Pods_NNMultipleImagePickerController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DA8783BFA77204E3C2D309 /* Pods_NNMultipleImagePickerController_Example.framework */; };
-		B07DDF8375357DEF00AE8C7E /* Pods_NNMultipleImagePickerController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A6F27839C6BFE6C9130E71 /* Pods_NNMultipleImagePickerController_Tests.framework */; };
+		87BD98B26A675D2FCA372BB5 /* libPods-NNMultipleImagePickerController_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA3FCEB9A447D9C0D63C2DF /* libPods-NNMultipleImagePickerController_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,10 @@
 /* Begin PBXFileReference section */
 		128DE4F025047D8E7899D1C8 /* Pods-NNMultipleImagePickerController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMultipleImagePickerController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNMultipleImagePickerController_Example/Pods-NNMultipleImagePickerController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2183BCE837873A5EE4179B51 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		27A6F27839C6BFE6C9130E71 /* Pods_NNMultipleImagePickerController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNMultipleImagePickerController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B38E15927BD178189F214E /* libPods-NNMultipleImagePickerController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNMultipleImagePickerController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4090DC9E09291D76CEA3ABB2 /* Pods-NNMultipleImagePickerController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMultipleImagePickerController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNMultipleImagePickerController_Tests/Pods-NNMultipleImagePickerController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* NNMultipleImagePickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = NNMultipleImagePickerController.app; path = NNMultipleImagePickerController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA3FCEB9A447D9C0D63C2DF /* libPods-NNMultipleImagePickerController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NNMultipleImagePickerController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* NNMultipleImagePickerController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNMultipleImagePickerController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,7 +54,7 @@
 		6003F5A5195388D20070C39A /* NNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* NNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = NNMultipleImagePickerController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* NNMultipleImagePickerController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNMultipleImagePickerController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAABDB4A559989FD3E7CDCE2 /* Pods-NNMultipleImagePickerController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMultipleImagePickerController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNMultipleImagePickerController_Tests/Pods-NNMultipleImagePickerController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C7374B685D163A31D6EBF86D /* Pods-NNMultipleImagePickerController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMultipleImagePickerController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNMultipleImagePickerController_Example/Pods-NNMultipleImagePickerController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D1DA8783BFA77204E3C2D309 /* Pods_NNMultipleImagePickerController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNMultipleImagePickerController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				8E0E9EB8C947CA728421890A /* Pods_NNMultipleImagePickerController_Example.framework in Frameworks */,
+				1E3276D84C789C4E48ED05CA /* libPods-NNMultipleImagePickerController_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B07DDF8375357DEF00AE8C7E /* Pods_NNMultipleImagePickerController_Tests.framework in Frameworks */,
+				87BD98B26A675D2FCA372BB5 /* libPods-NNMultipleImagePickerController_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +119,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* NNMultipleImagePickerController.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* NNMultipleImagePickerController_Example.app */,
+				6003F5AE195388D20070C39A /* NNMultipleImagePickerController_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				D1DA8783BFA77204E3C2D309 /* Pods_NNMultipleImagePickerController_Example.framework */,
-				27A6F27839C6BFE6C9130E71 /* Pods_NNMultipleImagePickerController_Tests.framework */,
+				33B38E15927BD178189F214E /* libPods-NNMultipleImagePickerController_Example.a */,
+				4FA3FCEB9A447D9C0D63C2DF /* libPods-NNMultipleImagePickerController_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			);
 			name = NNMultipleImagePickerController_Example;
 			productName = NNMultipleImagePickerController;
-			productReference = 6003F58A195388D20070C39A /* NNMultipleImagePickerController.app */;
+			productReference = 6003F58A195388D20070C39A /* NNMultipleImagePickerController_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* NNMultipleImagePickerController_Tests */ = {
@@ -234,7 +234,7 @@
 			);
 			name = NNMultipleImagePickerController_Tests;
 			productName = NNMultipleImagePickerControllerTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* NNMultipleImagePickerController_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */

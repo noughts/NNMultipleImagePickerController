@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'NNMultipleImagePickerController' => ['Pod/Assets/*.png']
+    'NNMultipleImagePickerController' => ['Pod/Assets/*.{png,storyboard,xib,lproj}']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

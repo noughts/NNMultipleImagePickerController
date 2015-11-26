@@ -1,0 +1,14 @@
+PODS:
+  - NNMultipleImagePickerController (0.1.0)
+
+DEPENDENCIES:
+  - NNMultipleImagePickerController (from `../`)
+
+EXTERNAL SOURCES:
+  NNMultipleImagePickerController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NNMultipleImagePickerController: 10c08424d1aae973f6b7230ae56c4621e14f1f48
+
+COCOAPODS: 0.39.0
