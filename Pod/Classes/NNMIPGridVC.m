@@ -107,6 +107,12 @@
 
 #pragma mark <UICollectionViewDataSource>
 
+-(UICollectionReusableView*)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+	UICollectionReusableView* view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"Footer" forIndexPath:indexPath];
+	UILabel* label = (UILabel*)[view viewWithTag:10];
+	label.text = [NSString stringWithFormat:@"写真: %@枚", @(_phAssets.count)];
+	return view;
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 	NSUInteger count = _phAssets.count;

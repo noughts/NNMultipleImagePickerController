@@ -42,7 +42,7 @@
 -(void)scrollToBottom:(NSUInteger)count{
 	if( count > 0 ){
 		NSIndexPath* indexPath = [NSIndexPath indexPathForItem:count-1 inSection:0];
-		[self scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:NO];
+		[self scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionTop animated:NO];
 	}
 }
 
