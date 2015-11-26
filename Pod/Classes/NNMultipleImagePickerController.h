@@ -30,7 +30,7 @@
 
 @protocol NNMultipleImagePickerControllerDelegate<NSObject>
 
--(void)imagePickerController:(NNMultipleImagePickerController*)picker didFinishPickingAssets:(NSArray*)photos;
+-(void)imagePickerController:(NNMultipleImagePickerController*)picker didFinishPickingAssets:(NSArray*)assets;
 -(void)imagePickerControllerDidCancel:(NNMultipleImagePickerController*)picker;
 @end
 

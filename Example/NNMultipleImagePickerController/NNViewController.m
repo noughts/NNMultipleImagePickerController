@@ -32,8 +32,8 @@
 
 
 
--(void)imagePickerController:(NNMultipleImagePickerController *)picker didFinishPickingAssets:(NSArray *)photos{
-	NBULogInfo(@"%@", photos);
+-(void)imagePickerController:(NNMultipleImagePickerController *)picker didFinishPickingAssets:(NSArray *)assets{
+	NBULogInfo(@"%@", assets);
 	[picker dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)imagePickerControllerDidCancel:(NNMultipleImagePickerController *)picker{
